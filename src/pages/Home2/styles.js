@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Img2 from "../../assets/empty-data.svg"
 
 export const Header = styled.div`
     width: 100%;
@@ -41,24 +40,42 @@ export const Content = styled.div`
     border-radius: 50px;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 
     margin: 30px;
-    background-image: url(${Img2});
     background-repeat: no-repeat;
     background-size: contain;
     width: 80%;
 
-    div{
+    #div1{
         width: 50%;
-        
+
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         #bt1{
-            margin-bottom: 5vh;
+            width: 100%;
+            margin-top: 5vh;
             max-width: 400px;
         }
     }
+
+    #lista-de-tarefas{
+            width: 80%;
+            height: 100vh;
+
+            background-color: aqua;
+    }
+`;
+
+export const Tarefas = styled.div`
+    margin: 2vh;
+
+    width: 95%;
+    height: 10%;
+
+    background-color: aliceblue;
 `;

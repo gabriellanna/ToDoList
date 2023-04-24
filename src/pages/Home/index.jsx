@@ -14,7 +14,7 @@ const HomePage = () => {
       <Container>
         <Content>
           <div>
-            <Button variant="contained">Logar</Button>
+            <Button id="bt1" variant="contained">Logar</Button>
           </div>
         </Content>
       </Container>
